@@ -286,9 +286,9 @@ class TopClient
 				$resp = $this->curl($requestUrl, $apiParams);
 			}
             Log::info($requestUrl);
-            Log::info('apiparams  '.var_export($apiParams,true));
-            Log::info('filefieldss '. var_export($fileFields,true));
-           Log::info(var_export(json_decode($resp,true),true));
+//            Log::info('apiparams  '.var_export($apiParams,true));
+//            Log::info('filefieldss '. var_export($fileFields,true));
+//           Log::info(var_export(json_decode($resp,true),true));
 //             dump(json_decode($resp));
 		}
 		catch (Exception $e)

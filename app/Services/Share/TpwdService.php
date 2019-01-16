@@ -42,7 +42,7 @@ class TpwdService
       'logo' => empty($tpwdConfig['logo']) ? $itemInfo->pict_url : $tpwdConfig['logo'],
       'text' => empty($tpwdConfig['text']) ? $itemInfo->title : $tpwdConfig['text'],
       'user_id' => $tpwdConfig['user_id'],
-        'ext'=>'{user_id:34343}'
+        'ext'=>json_encode(['tkuser_id'=>"123424"])
     ];
     $tpwdPara['url'] = "https:".$link;
 
@@ -59,7 +59,8 @@ class TpwdService
       'text' => $tpwdConfig['text'],
       'user_id' => $tpwdConfig['user_id'],
       'url' => $link,
-        'ext'=>json_encode(['text'=>1])
+        'ext'=>json_encode(['tkuser_id'=>"123424"])
+
     ]);
   }
 }

@@ -116,7 +116,7 @@ class AlimamaRepository implements AlimamaRepositoryInterface
   public function taobaoWirelessShareTpwdCreate(Array $datas)
   {
     $result = $this->alimamaSdk->taobaoWirelessShareTpwdCreate($datas);
-    empty($result->model) ? $tpwd = false : $tpwd = $result->model;
+    empty($result->data->model) ? $tpwd = false : $tpwd = $result->data->model;
 
     return $tpwd;
   }
