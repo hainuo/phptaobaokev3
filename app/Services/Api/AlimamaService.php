@@ -45,7 +45,7 @@ class AlimamaService
     return $tqgItems;
   }
 
-  // 淘宝客物料下行
+  // tb客物料下行
   public function taobaoTbkDgOptimusMaterial(Array $para)
   {
      return $this->alimamaRepository->taobaoTbkDgOptimusMaterial($para);

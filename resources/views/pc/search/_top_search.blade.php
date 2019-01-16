@@ -8,7 +8,7 @@
                         <ul class="nav nav-tabs search-tab" role="tablist">
                             @inject('showActive', 'App\Presenters\CouponListPresenter')
                             <li role="presentation" class="{{ $showActive->showActiveForSortPC(route('pc.search.all'), url()->current()) }}"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">综合搜索</a></li>
-                            <li role="presentation" class="{{ $showActive->showActiveForSortPC(route('pc.search.tmall'), url()->current()) }}"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">天猫</a></li>
+                            <li role="presentation" class="{{ $showActive->showActiveForSortPC(route('pc.search.tmall'), url()->current()) }}"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">tm</a></li>
                             <li role="presentation" class="{{ $showActive->showActiveForSortPC(route('pc.search.ju'), url()->current()) }}"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">聚划算</a></li>
                             <li role="presentation" class="{{ $showActive->showActiveForSortPC(route('pc.search.tpwd'), url()->current()) }}"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">淘口令</a></li>
                         </ul>

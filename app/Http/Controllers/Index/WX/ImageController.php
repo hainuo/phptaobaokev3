@@ -18,7 +18,7 @@ class ImageController extends Controller
       $this->makeImage = $img;
     }
 
-    // 生成淘宝优惠券的分享图片
+    // 生成tb优惠券的分享图片
     public function couponShareImage($id, Request $request)
     {
       $itemInfo = $this->repository->itemInfo(['num_iids' => $id, 'platform' => '2']);

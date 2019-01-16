@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div class="col-xs-4 ju-ercode-img">
-                <p class="text-center">手机淘宝APP扫码购买</p>
+                <p class="text-center">手机tbAPP扫码购买</p>
                 <img class="lazy" data-original="http://api.qrserver.com/v1/create-qr-code/?size=200x200&data={{ $item->wap_url }}" >
             </div>
         </div>

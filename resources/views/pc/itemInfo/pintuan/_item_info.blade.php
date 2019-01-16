@@ -66,9 +66,9 @@
                             </div>
                             <div class="col-xs-4">
                                 @if($itemInfo->user_type == 1)
-                                <p>店铺类型：天猫店</p>
+                                <p>店铺类型：tm店</p>
                                 @else
-                                <p>店铺类型：淘宝店</p>
+                                <p>店铺类型：tb店</p>
                                 @endif
                                 <p>商品所在地：{{ $itemInfo->provcity }}</p>
                                 <p>卖家ID：{{ $itemInfo->seller_id }}</p>
@@ -111,7 +111,7 @@
                         </div>
                     </div>
                     <div class="col-xs-3 text-right ercode">
-                        <p class="tips text-center">手机淘宝扫码拼团购买</p>
+                        <p class="tips text-center">手机tb扫码拼团购买</p>
                         @if(empty($pinTuanLink))
                         <img src="http://api.qrserver.com/v1/create-qr-code/?size=200x200&data={{ route('wx.itemInfo.pinTuanInfo', ['id'=>$id]) }}">
                         @else

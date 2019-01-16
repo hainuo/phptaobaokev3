@@ -100,9 +100,9 @@
               str +=     '<div class="mui-col-xs-8 lbd-content"><p class="lbd-title">'+data[i].title+'</p></div>'
               str +=     '<div class="mui-col-xs-8 lbd-content-more"><div class="lbd-top">'
                 if(data[i].user_type == 1) {
-                  str += '<span class="lbd-from-tmall">天猫</span>'
+                  str += '<span class="lbd-from-tmall">tm</span>'
                 } else {
-                  str += '<span class="lbd-from-taobao">淘宝</span>'
+                  str += '<span class="lbd-from-taobao">tb</span>'
                 }
                 str +=         '<span class="lbd-from-new">今日上新</span>销量：'+data[i].volume+'</div>'
                 str +=       '<div class="lbd-bottom"><div class="mui-pull-left"><div class="lbd-price-ori">原价￥'+parseFloat(data[i].zk_final_price).toFixed(2)+'</div>'

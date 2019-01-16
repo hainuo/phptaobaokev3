@@ -6,8 +6,8 @@
         <li class="lbd-top">请选择</li>
         @foreach($topGoodsCategory as $category)
         <li>
-          <a href="{{ route('goodsCategorys.categoryOne', $category->id) }}" title="{{ $category->name }}淘宝天猫优惠券分类">
-            <div class="img"><img src="{{ $category->image }}" alt="{{ $category->name }}淘宝天猫优惠券分类图片" style="width: 60%;"/></div>
+          <a href="{{ route('goodsCategorys.categoryOne', $category->id) }}" title="{{ $category->name }}优惠券分类">
+            <div class="img"><img src="{{ $category->image }}" alt="{{ $category->name }}优惠券分类图片" style="width: 60%;"/></div>
             <div class="text">{{ $category->name }}</div>
           </a>
         </li>

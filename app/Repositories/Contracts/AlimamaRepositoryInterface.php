@@ -3,7 +3,7 @@
 namespace App\Repositories\Contracts;
 
 /**
- * 阿里妈妈淘宝客api接口
+ * 阿里妈妈tb客api接口
  */
 interface AlimamaRepositoryInterface
 {
@@ -22,7 +22,7 @@ interface AlimamaRepositoryInterface
   // 淘抢购api
   public function taobaoTbkJuTqgGet(Array $para);
 
-  // 淘宝客商品详情（简版）
+  // tb客商品详情（简版）
   public function taobaoTbkItemInfoGet(Array $datas);
 
   // * 阿里妈妈推广券信息查询
@@ -31,6 +31,6 @@ interface AlimamaRepositoryInterface
   // 生成淘口令
   public function taobaoWirelessShareTpwdCreate(Array $datas);
 
-  //淘宝客擎天柱通用物料API  淘宝客物料下行-导购
+  //tb客擎天柱通用物料API  tb客物料下行-导购
   public function taobaoTbkDgOptimusMaterial(Array $datas);
 }

@@ -3,25 +3,25 @@
 return [
 
 	// 网站名称
-	'name' => '龙琴时代优惠券网',
+	'name' => '优惠券网',
 
 	// 网站首页的title内容
-	'indexTitle' => '淘宝内部优惠券|天猫超市优惠券|淘宝优惠券领取-龙琴时代优惠券购物网站',
+	'indexTitle' => '优惠券导航购物网站',
 
 	// 首页的keywords内容
-	'keywords' => '淘宝内部优惠券,天猫超市优惠券,淘宝内部优惠券领取,淘宝优惠券网站,天猫优惠券网站',
+	'keywords' => '优惠券领取',
 
 	// 首页描述
-	'description' => '龙琴时代优惠券网是一个专业的淘宝天猫优惠券分享网站,免费提供淘宝优惠券、天猫优惠券、内部优惠券、天猫超市优惠券、京东优惠券、拼多多优惠券等.淘宝天猫优惠券领取上龙琴时代网!',
+	'description' => '优惠券网是一个专业的优惠券分享网站!',
 
 	// 网站的域名
-	'domain' => 'www.52010000.cn',
+	'domain' => 'tk.hainuo.info',
 
 	// 公司名称或组织名称
-	'company_name' => '四川龙琴科技有限公司',
+	'company_name' => 'hainuo.info',
 
 	// 网站的备案号
-	'domain_beian' => '蜀ICP备15010745号-18',
+	'domain_beian' => '鲁ICP备15000586',
 
 	// 联系客服的二维码图片 200*200px
 	'kefu_ercode' => '/pcstyle/images/kefu.png',

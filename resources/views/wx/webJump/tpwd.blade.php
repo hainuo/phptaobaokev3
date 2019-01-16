@@ -29,10 +29,10 @@
 								<li class="mui-table-view-cell">
 									<h5>淘口令使用说明：</h5>
 									<p>
-										1.如果手机有淘宝APP，则可以使用此方式，如果没有，请先下载淘宝APP。<br />
+										1.如果手机有tbAPP，则可以使用此方式，如果没有，请先下载tbAPP。<br />
 										2.淘口令使用步骤：<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;a.点击【复制淘口令文案】按钮<br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;b.打开手机淘宝APP<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;b.打开手机tbAPP<br />
 										&nbsp;&nbsp;&nbsp;&nbsp;c.稍等片刻后，在出现的页面即可参加优惠<br />
 										3.每个优惠活动都有使用期限，过期作废，请尽快下单。
 									</p>

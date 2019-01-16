@@ -24,15 +24,15 @@
             </div>
             <div class="col-xs-3 topimg">
                 <div class="table-cell text-center">
-                    <img src="/pcstyle/images/top01.png" alt="人工审核的淘宝优惠券">
+                    <img src="/pcstyle/images/top01.png" alt="人工审核的tb优惠券">
                     <p class="text-center">100%人工审核</p>
                 </div>
                 <div class="table-cell text-center">
-                    <img src="/pcstyle/images/top02.png" alt="实施维护的天猫超市优惠券">
+                    <img src="/pcstyle/images/top02.png" alt="实施维护的tm超市优惠券">
                     <p class="text-center">实时维护排查</p>
                 </div>
                 <div class="table-cell text-center">
-                    <img src="/pcstyle/images/top03.png" alt="全天上新的淘宝内部优惠券">
+                    <img src="/pcstyle/images/top03.png" alt="全天上新的优惠券">
                     <p class="text-center">全天持续上新</p>
                 </div>
             </div>

@@ -8,7 +8,7 @@
 @section('content')
 <header class="mui-bar mui-bar-nav lbd-search-header">
   <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-  <a class="mui-icon mui-icon-home mui-pull-right lbd-a-no-tap" title="淘宝天猫优惠券" href="{{ route('wx.index') }}"></a>
+  <a class="mui-icon mui-icon-home mui-pull-right lbd-a-no-tap" title="优惠券" href="{{ route('wx.index') }}"></a>
   <h1 class="mui-title">搜优惠券</h1>
 </header>
 
@@ -18,7 +18,7 @@
 	<div id="slider" class="mui-slider">
 		<div id="sliderSegmentedControl" class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
 			<a rel="nofollow" class="mui-control-item mui-active" href="#item1mobile">全部</a>
-			<a rel="nofollow" class="mui-control-item" href="#item2mobile">天猫</a>
+			<a rel="nofollow" class="mui-control-item" href="#item2mobile">tm</a>
 			<a rel="nofollow" class="mui-control-item" href="#item3mobile">聚划算</a>
 			<a rel="nofollow" class="mui-control-item" href="#item4mobile">淘口令</a>
 		</div>
@@ -34,7 +34,7 @@
 							<button type="submit" class="mui-btn mui-btn-block mui-btn-danger" >搜 索</button>
 						</div>
 					</form>
-					<p><strong>*</strong>搜索淘宝和天猫的商品优惠券</p>
+					<p><strong>*</strong>搜索tb和tm的商品优惠券</p>
 				</div>
 			</div>
 			<div id="item2mobile" class="mui-slider-item mui-control-content">
@@ -47,7 +47,7 @@
 							<button type="submit" class="mui-btn mui-btn-block mui-btn-danger" >搜 索</button>
 						</div>
 					</form>
-					<p><strong>*</strong>只搜索天猫的商品优惠券</p>
+					<p><strong>*</strong>只搜索tm的商品优惠券</p>
 				</div>
 			</div>
 			<div id="item3mobile" class="mui-slider-item mui-control-content">
@@ -67,7 +67,7 @@
 				<div class="mui-content-padded" >
 					<form action="{{ route('wx.search.tpwd') }}" method="get">
 						<div class="mui-input-row">
-							<textarea id="textarea" name='q' rows="5" placeholder="请粘贴含有淘口令的文字，例如：復·制这段描述，€z8rP0wuMBLc€ ，咑閞【手机淘宝】即可查看。" required></textarea>
+							<textarea id="textarea" name='q' rows="5" placeholder="请粘贴含有淘口令的文字，例如：復·制这段描述，€z8rP0wuMBLc€ ，咑閞【手机tb】即可查看。" required></textarea>
 						</div>
 						<div class="mui-button-row">
 							<button type="submit" class="mui-btn mui-btn-block mui-btn-danger" >搜 索</button>

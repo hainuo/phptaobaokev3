@@ -1,7 +1,7 @@
 <?php
 
 namespace Longbeidou\Taobaoke\SDK\top;
-
+use Illuminate\Support\Facades\Log;
 class TopClient
 {
 	public $appkey;
@@ -247,7 +247,7 @@ class TopClient
 		$apiParams = array();
 		//获取业务参数
 		$apiParams = $request->getApiParas();
-
+//        dump($apiParams);
 
 		//系统参数放入GET请求串
 		if($bestUrl){
@@ -277,7 +277,6 @@ class TopClient
 
 		// $requestUrl .= "timestamp=" . urlencode($sysParams["timestamp"]) . "&";
 		$requestUrl = substr($requestUrl, 0, -1);
-
 		//发起HTTP请求
 		try
 		{
@@ -286,6 +285,11 @@ class TopClient
 			}else{
 				$resp = $this->curl($requestUrl, $apiParams);
 			}
+            Log::info($requestUrl);
+            Log::info('apiparams  '.var_export($apiParams,true));
+            Log::info('filefieldss '. var_export($fileFields,true));
+           Log::info(var_export(json_decode($resp,true),true));
+//             dump(json_decode($resp));
 		}
 		catch (Exception $e)
 		{

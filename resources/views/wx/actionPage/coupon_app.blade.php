@@ -31,11 +31,11 @@
 								<li class="mui-table-view-cell">
 									<h5>淘口令使用说明：</h5>
 									<p>
-										1.如果手机有淘宝APP，则可以直接复制口令领券。手机没有淘宝APP，请先安装再复制淘口令领券。<br />
+										1.如果手机有tbAPP，则可以直接复制口令领券。手机没有tbAPP，请先安装再复制淘口令领券。<br />
 										2.领券步骤：<br>
 										&nbsp;&nbsp;&nbsp;&nbsp;a.点击【复制淘口令】按钮<br />
-										&nbsp;&nbsp;&nbsp;&nbsp;b.打开手机淘宝APP<br />
-										&nbsp;&nbsp;&nbsp;&nbsp;c.在淘宝APP内领券下单<br />
+										&nbsp;&nbsp;&nbsp;&nbsp;b.打开手机tbAPP<br />
+										&nbsp;&nbsp;&nbsp;&nbsp;c.在tbAPP内领券下单<br />
 										3.优惠券有使用期限，过期作废，请尽快下单。
 									</p>
 								</li>
@@ -60,8 +60,8 @@
 										2.领券步骤：<br>
 										&nbsp;&nbsp;&nbsp;&nbsp;a.点击【立即领券】按钮<br />
 										&nbsp;&nbsp;&nbsp;&nbsp;b.在出现的登录页面输入账号和密码<br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;c.登录淘宝后在淘宝领券页面领取优惠券<br />
-										&nbsp;&nbsp;&nbsp;&nbsp;d.淘宝下单的时候就可以使用优惠券享受优惠了<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;c.登录tb后在tb领券页面领取优惠券<br />
+										&nbsp;&nbsp;&nbsp;&nbsp;d.tb下单的时候就可以使用优惠券享受优惠了<br />
 										3.优惠券有使用期限，过期作废，请尽快下单。
 									</p>
 								</li>

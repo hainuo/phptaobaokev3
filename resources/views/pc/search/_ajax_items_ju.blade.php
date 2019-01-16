@@ -56,7 +56,7 @@ function addItems(data)
         itemhtml += '<p class="ju-s">'+item.price_usp_list.string[0]+'</p><p class="ju-date">活动开始时间:'+start_time+'</p><p class="ju-date">活动结束时间:'+end_time+'</p>'
         itemhtml += '<div class="ju-link"><a rel="nofollow" href="'+item.pc_url+'" target="_blank">马上领取</a></div>'
         itemhtml += '</div></div><div class="col-xs-4 ju-ercode-img">'
-        itemhtml += '<p class="text-center">手机淘宝APP扫码购买</p><img class="lazy" src="http://api.qrserver.com/v1/create-qr-code/?size=200x200&data='+item.wap_url+'" >'
+        itemhtml += '<p class="text-center">手机tbAPP扫码购买</p><img class="lazy" src="http://api.qrserver.com/v1/create-qr-code/?size=200x200&data='+item.wap_url+'" >'
         itemhtml += '</div></div></div></div>'
     }
     $('#ajax-ju-item-list').append(itemhtml);

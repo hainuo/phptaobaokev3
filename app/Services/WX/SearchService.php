@@ -5,6 +5,7 @@ namespace App\Services\WX;
 use App\Services\Share\GuessYouLikeService;
 use App\Repositories\Contracts\AlimamaRepositoryInterface;
 use App\Services\Share\TpwdService;
+use Illuminate\Support\Facades\Log;
 
 class SearchService
 {
@@ -25,7 +26,7 @@ class SearchService
     return $this->guessYouLike->coupons($adzonId, $num);
   }
 
-  // 默认搜索（淘宝+天猫）
+  // 默认搜索（tb+tm）
   public function all($para)
   {
     $para['has_coupon'] = 'true';
@@ -35,7 +36,7 @@ class SearchService
     } else {
       $para['sort'] = $this->getSortValue($para['sort']);
     }
-
+    Log::info('阿里妈妈物料 api');
     $result = $this->alimama->taobaoTbkDgMaterialOptional($para);
 
     if (empty($result)) {
@@ -45,7 +46,7 @@ class SearchService
     return $result;
   }
 
-  // 至搜索天猫
+  // 至搜索tm
   public function tmall($para)
   {
     $para['has_coupon'] = 'true';

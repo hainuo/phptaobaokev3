@@ -17,7 +17,7 @@ class AllGoodsCategoryController extends Controller
 
   public function index()
   {
-    $title = '淘宝天猫优惠券商品分类';
+    $title = '优惠券商品分类';
     $leftTopCategory = $this->repository->leftTopCategory();
     $subCategory = $this->repository->subCategory($leftTopCategory);
     $sonCategory = $this->repository->sonCategory($subCategory);

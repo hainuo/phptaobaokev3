@@ -27,7 +27,7 @@ class CreateTaobaoTbkDgMaterialOptionalTable extends Migration
             $table->char('end_price', 8)->nullable();         // 折扣价范围上限，单位：元
             $table->char('start_price', 8)->nullable();       // 折扣价范围下限，单位：元
             $table->char('is_overseas', 5)->default('false'); // 是否海外商品，设置为true表示该商品是属于海外商品，设置为false或不设置表示不判断这个属性
-            $table->char('is_tmall', 5)->default('false');    // 是否商城商品，设置为true表示该商品是属于淘宝商城商品，设置为false或不设置表示不判断这个属性
+            $table->char('is_tmall', 5)->default('false');    // 是否商城商品，设置为true表示该商品是属于tb商城商品，设置为false或不设置表示不判断这个属性
             $table->char('sort', 18)->nullable();             // 排序_des（降序），排序_asc（升序），销量（total_sales），淘客佣金比率（tk_rate）， 累计推广量（tk_total_sales），总支出佣金（tk_total_commi），价格（price）
             $table->char('itemloc', 30)->nullable();          // 所在地
             $table->string('cat')->nullable();                // 后台类目ID，用,分割，最大10个，该ID可以通过taobao.itemcats.get接口获取到

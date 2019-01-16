@@ -32,11 +32,11 @@
 								<li class="mui-table-view-cell">
 									<h5>淘口令使用说明：</h5>
 									<p>
-										1.如果手机有淘宝APP，则可以直接复制口令拼团。手机没有淘宝APP，请先安装再复制淘口令参加拼团。<br />
+										1.如果手机有tbAPP，则可以直接复制口令拼团。手机没有tbAPP，请先安装再复制淘口令参加拼团。<br />
 										2.拼团步骤：<br>
 										&nbsp;&nbsp;&nbsp;&nbsp;a.点击【复制淘口令】按钮<br />
-										&nbsp;&nbsp;&nbsp;&nbsp;b.打开手机淘宝APP<br />
-										&nbsp;&nbsp;&nbsp;&nbsp;c.在淘宝APP内拼团购买<br />
+										&nbsp;&nbsp;&nbsp;&nbsp;b.打开手机tbAPP<br />
+										&nbsp;&nbsp;&nbsp;&nbsp;c.在tbAPP内拼团购买<br />
 										3.参与拼团有时间限制，过期作废，请尽快下单。
 									</p>
 								</li>
@@ -61,7 +61,7 @@
 										2.领券步骤：<br>
 										&nbsp;&nbsp;&nbsp;&nbsp;a.点击【立即拼团】按钮<br />
 										&nbsp;&nbsp;&nbsp;&nbsp;b.在出现的登录页面输入账号和密码<br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;c.登录淘宝后参与拼团购买<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;c.登录tb后参与拼团购买<br />
 										&nbsp;&nbsp;&nbsp;&nbsp;d.拼团成功就可以享受优惠了<br />
                     3.参与拼团有时间限制，过期作废，请尽快下单。
 									</p>
@@ -82,7 +82,7 @@
                     1.通过龙琴时代APP拼团的成功率最高<br/>
 										2.拼团的产品每天24小时实时更新，保证时效性<br />
                     3.商品种类涉及上百个大类，上千个小分类，总能找到自己喜欢的宝贝<br />
-                    4.独家分享上千家合作的淘宝天猫店铺的大额优惠券，领券最低一折购物<br />
+                    4.独家分享上千家合作的tbtm店铺的大额优惠券，领券最低一折购物<br />
 										5.优惠券有使用期限，过期作废，请尽快下单。
 									</p>
 								</li>

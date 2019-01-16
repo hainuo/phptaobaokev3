@@ -93,15 +93,15 @@ class IndexService
 
     switch ($sort) {
       case 'price':
-        return '低价淘宝优惠券 - '.$goodsCategoryName.'优惠券';
+        return '低价tb优惠券 - '.$goodsCategoryName.'优惠券';
         break;
 
       case 'sales':
-        return '热销淘宝优惠券 - '.$goodsCategoryName.'优惠券';
+        return '热销tb优惠券 - '.$goodsCategoryName.'优惠券';
         break;
 
       case 'commi':
-        return '最热淘宝优惠券 - '.$goodsCategoryName.'优惠券';
+        return '最热tb优惠券 - '.$goodsCategoryName.'优惠券';
         break;
 
       default:

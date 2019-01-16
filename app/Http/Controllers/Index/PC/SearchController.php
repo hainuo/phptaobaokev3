@@ -33,7 +33,7 @@ class SearchController extends Controller
 
     public function index()
     {
-        $title = "淘宝天猫优惠券查询系统";
+        $title = "优惠券查询系统";
         $guessYouLikeItems = $this->repository->guessYouLike($this->guessYouLikeAdzoneId, self::GUESS_YOU_LIKE_NUM);
         $pageSize = self::GUESS_YOU_LIKE_NUM;
         $adzoneId = $this->guessYouLikeAdzoneId;
@@ -54,15 +54,16 @@ class SearchController extends Controller
         $para['q'] = $request->q;
         $para['adzone_id'] = $this->searchAllAdzonId;
         $para['page_size'] = self::PAGE_SIZE;
-        $title = $request->q.'淘宝天猫优惠券';
+        $title = $request->q.'优惠券';
         $name = '综合搜索';
-        $materialItems = $this->repository->all(['adzone_id' => $this->searchAllAdzonId, 'page_size' => self::PAGE_SIZE, 'q' => $request->q, 'sort' => $sort]);
+
+        $materialItems = $this->repository->all(['adzone_id' => $this->searchAllAdzonId, 'page_size' => self::PAGE_SIZE, 'q' => $request->q, 'sort' => $sort,''=>134343433]);
         $guessYouLikeItems = $this->repository->guessYouLike($this->guessYouLikeAdzoneId, self::GUESS_YOU_LIKE_NUM_RESULT);
 
         return view('pc.search.result_coupons', compact('title', 'name', 'materialItems', 'q', 'para', 'sort', 'guessYouLikeItems'));
     }
 
-    // 只搜索天猫
+    // 只搜索tm
     public function tmall(Request $request)
     {
         $this->validate($request, [
@@ -76,8 +77,8 @@ class SearchController extends Controller
         $para['adzone_id'] = $this->searchTmallAdzoneId;
         $para['page_size'] = self::PAGE_SIZE;
         $para['is_tmall'] = 'true';
-        $title = $request->q.'天猫优惠券';
-        $name = '天猫搜索';
+        $title = $request->q.'tm优惠券';
+        $name = 'tm搜索';
         $materialItems = $this->repository->tmall(['adzone_id' => $this->searchTmallAdzoneId, 'page_size' => self::PAGE_SIZE, 'q' => $request->q, 'sort' => $sort]);
         $guessYouLikeItems = $this->repository->guessYouLike($this->guessYouLikeAdzoneId, self::GUESS_YOU_LIKE_NUM_RESULT);
 

@@ -1,10 +1,10 @@
 @inject('footer', 'App\Presenters\FooterTabPresenter')
 <nav class="mui-bar mui-bar-tab lbd-footer-tab" id="lbd-footer-tab">
-    <a title="淘宝天猫优惠券" class="mui-tab-item a-can-do {{ $footer->isActiveAction(route('wx.index')) }}" href="{{ route('wx.index') }}">
+    <a title="优惠券" class="mui-tab-item a-can-do {{ $footer->isActiveAction(route('wx.index')) }}" href="{{ route('wx.index') }}">
         <span class="mui-icon mui-icon-home"></span>
         <span class="mui-tab-label">首页</span>
     </a>
-    <a title="淘宝天猫优惠券商品分类" class="mui-tab-item a-can-do {{ $footer->isActiveAction(route('wx.allGoodsCategory.index')) }}" href="{{ route('wx.allGoodsCategory.index') }}">
+    <a title="优惠券商品分类" class="mui-tab-item a-can-do {{ $footer->isActiveAction(route('wx.allGoodsCategory.index')) }}" href="{{ route('wx.allGoodsCategory.index') }}">
         <span class="mui-icon mui-icon-list"></span>
         <span class="mui-tab-label">分类</span>
     </a>
@@ -14,7 +14,7 @@
         <span class="mui-tab-label">下载APP</span>
     </a>
     @endif
-    <a title="搜索淘宝天猫优惠券" class="mui-tab-item a-can-do {{ $footer->isActiveAction(route('wx.search.index')) }}" href="{{ route('wx.search.index') }}">
+    <a title="搜索优惠券" class="mui-tab-item a-can-do {{ $footer->isActiveAction(route('wx.search.index')) }}" href="{{ route('wx.search.index') }}">
         <span class="mui-icon mui-icon-search"></span>
         <span class="mui-tab-label">搜索</span>
     </a>

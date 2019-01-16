@@ -6,6 +6,7 @@ use Longbeidou\Taobaoke\SDK\top\RequestCheckUtil;
 
 /**
  * TOP API: taobao.wireless.share.tpwd.create request
+ * taobao.tbk.tpwd.create
  *
  * @author auto create
  * @since 1.0, 2017.12.18
@@ -32,7 +33,8 @@ class WirelessShareTpwdCreateRequest
 
 	public function getApiMethodName()
 	{
-		return "taobao.wireless.share.tpwd.create";
+//		return "taobao.wireless.share.tpwd.create";
+		return "taobao.tbk.tpwd.create";
 	}
 
 	public function getApiParas()

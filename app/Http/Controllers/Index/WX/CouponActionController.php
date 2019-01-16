@@ -19,8 +19,8 @@ class CouponActionController extends Controller
   public function index($id, Request $request)
   {
     $showClient = config('website.show_client');
-    $title = '领淘宝天猫优惠券';
-    $name = '领淘宝优惠券';
+    $title = '领优惠券';
+    $name = '领tb优惠券';
     $couponLink = $this->repository->couponLink($request->all());
     // $linkPara = $this->repository->linkPara($couponLink);
 
@@ -33,6 +33,7 @@ class CouponActionController extends Controller
       $itemInfo = null;
     }
     $tpwd = $this->repository->makeTpwd($couponLink, $itemInfo);
+//    dump($tpwd);
     $showClient = $this->repository->showClient($showClient);
 
     if (env('IS_APP')) {
@@ -46,8 +47,8 @@ class CouponActionController extends Controller
   public function appIndex($id, Request $request)
   {
     $showClient = config('website.show_client');
-    $title = '领淘宝天猫优惠券';
-    $name = '领淘宝优惠券';
+    $title = '领优惠券';
+    $name = '领tb优惠券';
     $couponLink = $this->repository->couponLink($request->all());
     // $linkPara = $this->repository->linkPara($couponLink);
 

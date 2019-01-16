@@ -1,45 +1,45 @@
 <?php
 
 return [
-	// 无线端聚划算搜素的pid
+	// 无线端聚划算搜素的pid   mm_14498217_312550113_86502200068
 	'wx_ju_search_pid' => 'mm_'.env('PID_USER').'_'.env('PID_SITE').'_1459170411',
 
 	// 无线端全部搜索的adzone_id
-	'wx_search_all_adzone_id' => '1459124850',
+	'wx_search_all_adzone_id' => '86502200068',
 
-	// 无线端 只针对天猫的搜索
-	'wx_search_tmall_adzone_id' => '1459162255',
+	// 无线端 只针对tm的搜索
+	'wx_search_tmall_adzone_id' => '86502200068',
 
 	// 淘口令 搜索
-	'wx_search_tpwd' => '1459186177',
+	'wx_search_tpwd' => '86502200068',
 
 	// 无线端首页coupon api获取的商品
-	'wx_index_coupon_adzone_id' => '1459254918',
+	'wx_index_coupon_adzone_id' => '86502200068',
 
 	// 无线端猜你喜欢 coupon api获取的商品
-	'wx_coupon_guess_you_like' => '1459300118',
+	'wx_coupon_guess_you_like' => '86502200068',
 
 	// 无线端猜你喜欢 聚划算拼团  api获取的商品
-	'wx_coupon_guess_you_like_pintuan' => '1459300118',
+	'wx_coupon_guess_you_like_pintuan' => '86502200068',
 
 	// 无线端淘抢购
-	'wx_tqg' => '1459318297',
+	'wx_tqg' => '86502200068',
 
 	// PC端首页coupon api获取的商品
-	'pc_index_coupon_adzone_id' => '1459254918',
+	'pc_index_coupon_adzone_id' => '86502200068',
 
 	// PC端商品列表页猜你喜欢
-	'pc_coupon_guess_you_like' => '1459254918',
+	'pc_coupon_guess_you_like' => '86502200068',
 
 	// PC端聚划算搜素的pid
-	'pc_ju_search_pid' => 'mm_'.env('PID_USER').'_'.env('PID_SITE').'_1459170411',
+	'pc_ju_search_pid' => 'mm_'.env('PID_USER').'_'.env('PID_SITE').'_86502200068',
 
 	// PC端全部搜索的adzone_id
-	'pc_search_all_adzone_id' => '1459124850',
+	'pc_search_all_adzone_id' => '86502200068',
 
-	// PC端 只针对天猫的搜索
-	'pc_search_tmall_adzone_id' => '1459162255',
+	// PC端 只针对tm的搜索
+	'pc_search_tmall_adzone_id' => '86502200068',
 
 	// PC端淘口令 搜索
-	'pc_search_tpwd' => '1459186177',
+	'pc_search_tpwd' => '86502200068',
 ];

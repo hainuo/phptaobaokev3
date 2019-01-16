@@ -19,8 +19,8 @@ return [
 	],
 	'advanced_permissions' => [ // 是否开启高级权限
 		'taobao_tbk_coupon_convert' => false, // 	【导购】链接转换 true表示开启
-		'taobao_tbk_item_convert' => false, // 淘宝客商品链接转换 true表示开启
-		'taobao_tbk_shop_convert' => false, // 淘宝客店铺链接转换 true表示开启
+		'taobao_tbk_item_convert' => false, // tb客商品链接转换 true表示开启
+		'taobao_tbk_shop_convert' => false, // tb客店铺链接转换 true表示开启
 		'taobao_tbk_tpwd_convert' => false  // 淘口令转链 true表示开启
 	]
 ];

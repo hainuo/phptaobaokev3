@@ -103,9 +103,9 @@
           str +=    '<div class="mui-col-xs-8 lbd-content-more">'
           str +=      '<div class="lbd-top">'
                         if(data[i].user_type == 1) {
-                          str += '<span class="lbd-from-tmall">天猫</span>'
+                          str += '<span class="lbd-from-tmall">tm</span>'
                         } else {
-                          str += '<span class="lbd-from-taobao">淘宝</span>'
+                          str += '<span class="lbd-from-taobao">tb</span>'
                         }
           str +=        '<span class="lbd-from-new">'+data[i].jdd_num+'人团</span> 销量：'+data[i].sell_num+'</div>'
           str +=      '<div class="lbd-bottom"><div class="mui-pull-left">'

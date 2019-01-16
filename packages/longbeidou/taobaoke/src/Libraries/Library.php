@@ -315,12 +315,14 @@ class Library extends Base
 	*/
 	public function taobaoWirelessShareTpwdCreate(Array $datas)
 	{
+//	    dump($datas);
 		$standard = ['user_id', 'text', 'url', 'logo', 'ext'];
 		$req = new WirelessShareTpwdCreateRequest;
-		$tpwd_param = new GenPwdIsvParamDto;
-		$tpwd_param = $this->setOptions->toOptions($tpwd_param, $datas, $standard);
-		$req->setTpwdParam(json_encode($tpwd_param));
-
+		$req =new  TbkTpwdCreateRequest();
+//		$tpwd_param = new GenPwdIsvParamDto;
+        $req = $this->setOptions->options($req, $datas, $standard);
+//		$tpwd_param = $this->setOptions->toOptions($tpwd_param, $datas, $standard);
+//		$req->setTpwdParam(json_encode($tpwd_param));
 		return $this->c->execute($req);
 	}
 

@@ -8,19 +8,19 @@
       </a>
     </li>
     <li>
-      <a class="a-can-do" href="{{ route('wx.optimusMaterial.fashion') }}" title="淘宝天猫优惠券潮流范专场">
+      <a class="a-can-do" href="{{ route('wx.optimusMaterial.fashion') }}" title="优惠券潮流范专场">
         <div class="lbd-img"><img src="/wxstyle/images/categorys/fashion.png"></div>
         <div class="lbd-text">潮流街区</div>
       </a>
     </li>
     <li>
-      <a class="a-can-do" href="{{ route('wx.optimusMaterial.recommend') }}" title="淘宝内部优惠券推荐专场">
+      <a class="a-can-do" href="{{ route('wx.optimusMaterial.recommend') }}" title="优惠券推荐专场">
         <div class="lbd-img"><img src="/wxstyle/images/categorys/recommend.png"></div>
         <div class="lbd-text">推荐好货</div>
       </a>
     </li>
     <li>
-      <a class="a-can-do" href="{{ route('wx.optimusMaterial.sales') }}" title="特价淘宝天猫优惠券专场">
+      <a class="a-can-do" href="{{ route('wx.optimusMaterial.sales') }}" title="特价优惠券专场">
         <div class="lbd-img"><img src="/wxstyle/images/categorys/sales.png"></div>
         <div class="lbd-text">特惠专场</div>
       </a>

@@ -63,7 +63,7 @@
         <div class="mui-col-xs-12 mui-text-center logo-box">
             <img class="mui-col-xs-4" src="/wxstyle/images/app_logo_400.png" alt="龙琴时代APP的logo">
             <h1>龙琴时代</h1>
-            <h2>一个免费分享淘宝天猫优惠券的APP</h2>
+            <h2>一个免费分享优惠券的APP</h2>
         </div>
 
         <!-- 安卓版本下载 -->

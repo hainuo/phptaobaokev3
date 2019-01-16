@@ -21,9 +21,9 @@
             <div class="mui-col-xs-8 lbd-content-more">
               <div class="lbd-top">
                 @if($item->user_type == 1)
-                <span class="lbd-from-tmall">天猫</span>
+                <span class="lbd-from-tmall">tm</span>
                 @else
-                <span class="lbd-from-taobao">淘宝</span>
+                <span class="lbd-from-taobao">tb</span>
                 @endif
                 <span class="lbd-from-new">{{ $item->jdd_num }}人团</span>
                 {{ $item->sell_num }}人已拼团

@@ -10,7 +10,7 @@ class CouponListPresenter
 
   public function showTmallOrTaobao($userType)
   {
-    $userType == '1' ? $str = '<span class="lbd-from-tmall">天猫</span>' : $str = '<span class="lbd-from-taobao">淘宝</span>';
+    $userType == '1' ? $str = '<span class="lbd-from-tmall">tm</span>' : $str = '<span class="lbd-from-taobao">tb</span>';
 
     return $str;
   }
@@ -103,11 +103,11 @@ class CouponListPresenter
      return empty($urlArr[1]) ? '' : $urlArr[1];
   }
 
-  // PC首页标题前面的淘宝天猫小logo
+  // PC首页标题前面的tbtm小logo
   public function imgTaobaoOrTmall($userType)
   {
-      $imgTaobao = '<img src="/pcstyle/images/taobao32.png" alt="淘宝优惠券logo">';
-      $imgTmall = '<img src="/pcstyle/images/tmall32.png" alt="淘宝优惠券logo">';
+      $imgTaobao = '<img src="/pcstyle/images/taobao32.png" alt="tb优惠券logo">';
+      $imgTmall = '<img src="/pcstyle/images/tmall32.png" alt="tb优惠券logo">';
 
       return $userType == 1 ? $imgTmall : $imgTaobao;
   }

@@ -14,7 +14,7 @@ class MakeCouponShareImageService
   const IMG_SRC     = 'coupon/img';       // 商品的推广图片保存地址
   const BGIMG_SRC   = 'tuiguang/bg.png';  // 背景图的存放路径
   const PINTUAN_BGIMG_SRC   = 'tuiguang/pintuan-bg.png';  // 背景图的存放路径
-  const TAOBAO_SRC  = 'coupon/taobao';    // 淘宝网商品图的保存路径
+  const TAOBAO_SRC  = 'coupon/taobao';    // tb网商品图的保存路径
   const NAME        = 'id';               // 文件的名称
 
   // 生成海报分享的图片
@@ -25,16 +25,16 @@ class MakeCouponShareImageService
     // 检测并生成目录
     $this->mkdirSelf(self::QRCODES_SRC);  // 二维码的目录
     $this->mkdirSelf(self::IMG_SRC);      // 商品推广图片的路径
-    $this->mkdirSelf(self::TAOBAO_SRC);   // 淘宝商品图片的路径
+    $this->mkdirSelf(self::TAOBAO_SRC);   // tb商品图片的路径
 
     // 生成二维码图片
     $this->makeQrCode(242, 0, '0,0,0', '255,255,255', $info['linkInfo'], public_path(self::QRCODES_SRC.'/'.self::NAME.'.png'));
-    // 将淘宝的图片保存到本地
+    // 将tb的图片保存到本地
     $this->saveOutImageToLocal($info['img'], 889, self::TAOBAO_SRC.'/'.self::NAME.'.png');
 
     $img = Image::make(public_path(self::BGIMG_SRC))
             ->insert(public_path(self::QRCODES_SRC.'/'.self::NAME.'.png'), 'bottom-right', 61, 66) // 插入二维码
-            ->insert(public_path(self::TAOBAO_SRC.'/'.self::NAME.'.png'), 'top');                  // 插入淘宝图
+            ->insert(public_path(self::TAOBAO_SRC.'/'.self::NAME.'.png'), 'top');                  // 插入tb图
 
     $img = $this->addGoodsNameToImage ($img, $info['goodsName']); // 将商品名称写入图片
     $img = $this->addText($img, ['text'=>$info['priceNow'], 'x'=>369, 'y'=>1165, 'size'=>'60', 'color'=>array(255, 79, 30, 1)]); // 写入现价到图片
@@ -55,16 +55,16 @@ class MakeCouponShareImageService
     // 检测并生成目录
     $this->mkdirSelf(self::QRCODES_SRC);  // 二维码的目录
     $this->mkdirSelf(self::IMG_SRC);      // 商品推广图片的路径
-    $this->mkdirSelf(self::TAOBAO_SRC);   // 淘宝商品图片的路径
+    $this->mkdirSelf(self::TAOBAO_SRC);   // tb商品图片的路径
 
     // 生成二维码图片
     $this->makeQrCode(242, 0, '0,0,0', '255,255,255', $info['linkInfo'], public_path(self::QRCODES_SRC.'/'.self::NAME.'.png'));
-    // 将淘宝的图片保存到本地
+    // 将tb的图片保存到本地
     $this->saveOutImageToLocal($info['img'], 889, self::TAOBAO_SRC.'/'.self::NAME.'.png');
 
     $img = Image::make(public_path(self::PINTUAN_BGIMG_SRC))
             ->insert(public_path(self::QRCODES_SRC.'/'.self::NAME.'.png'), 'bottom-right', 61, 66) // 插入二维码
-            ->insert(public_path(self::TAOBAO_SRC.'/'.self::NAME.'.png'), 'top');                  // 插入淘宝图
+            ->insert(public_path(self::TAOBAO_SRC.'/'.self::NAME.'.png'), 'top');                  // 插入tb图
 
     $img = $this->addGoodsNameToImage ($img, $info['goodsName']); // 将商品名称写入图片
     $img = $this->addText($img, ['text'=>$info['priceNow'], 'x'=>369, 'y'=>1165, 'size'=>'60', 'color'=>array(255, 79, 30, 1)]); // 写入现价到图片
@@ -166,7 +166,7 @@ class MakeCouponShareImageService
     return $QrCode;
   }
 
-  // 将淘宝的图片下载到本地
+  // 将tb的图片下载到本地
   public function saveOutImageToLocal($imgSrc, $width, $path)
   {
     $img = Image::make($imgSrc)
@@ -233,7 +233,7 @@ class MakeCouponShareImageService
   // 插入网站的版权
   public function addCopyToImage ($img) {
     $webName = config('website.name').'独家分享！';
-    $website = '更多淘宝天猫优惠券见:'.config('website.domain');
+    $website = '更多优惠券见:'.config('website.domain');
     $img = $this->addText($img, ['text'=>$webName, 'x'=>35, 'y'=>1230, 'size'=>'25', 'color'=>array(69, 69, 69, 0.5)]);
     $img = $this->addText($img, ['text'=>$website, 'x'=>385, 'y'=>1230, 'size'=>'25', 'color'=>array(69, 69, 69, 0.5)]);
     return $img;
@@ -246,11 +246,11 @@ class MakeCouponShareImageService
     if (file_exists(public_path(self::QRCODES_SRC.'/'.self::NAME.'.png'))) {
         unlink(public_path(self::QRCODES_SRC.'/'.self::NAME.'.png'));
     }
-    // 删除淘宝商品图片
+    // 删除tb商品图片
     if (file_exists(public_path(self::TAOBAO_SRC.'/'.self::NAME.'.png'))) {
         unlink(public_path(self::TAOBAO_SRC.'/'.self::NAME.'.png'));
     }
-    // 删除淘宝分享的图片
+    // 删除tb分享的图片
     if (file_exists(public_path(self::IMG_SRC.'/'.self::NAME.'.jpg'))) {
         unlink(public_path(self::IMG_SRC.'/'.self::NAME.'.jpg'));
     }

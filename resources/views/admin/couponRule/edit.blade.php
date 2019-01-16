@@ -102,11 +102,11 @@
                           </div>
                       </div>
                       <div class="form-group">
-                          <label class="col-sm-3 control-label">是否只选天猫商品：</label>
+                          <label class="col-sm-3 control-label">是否只选tm商品：</label>
                           <div class="col-sm-9">
                               <select class="form-control" name="is_tmall">
                                   <option {{ $showCouponRule->showSelected($couponRule->is_tmall, 'false') }} value="false">不限</option>
-                                  <option {{ $showCouponRule->showSelected($couponRule->is_tmall, 'true') }} value="true">天猫商城商品</option>
+                                  <option {{ $showCouponRule->showSelected($couponRule->is_tmall, 'true') }} value="true">tm商城商品</option>
                               </select>
                           </div>
                       </div>

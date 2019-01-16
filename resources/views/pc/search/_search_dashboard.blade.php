@@ -4,7 +4,7 @@
             <div class="col-xs-6 col-xs-offset-3 search-box">
                 <ul class="nav nav-tabs search-tab" role="tablist">
                     <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">综合搜索</a></li>
-                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">天猫</a></li>
+                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">tm</a></li>
                     <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">聚划算</a></li>
                     <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">淘口令</a></li>
                 </ul>
@@ -20,7 +20,7 @@
                                 </div>
                             </form>
                             <div class="col-xs-12">
-                                <p class="help-block"><strong>提示：</strong>搜索范围为 <strong>淘宝和天猫</strong> 的商品</p>
+                                <p class="help-block"><strong>提示：</strong>搜索范围为 <strong>tb和tm</strong> 的商品</p>
                             </div>
                         </div>
                         <div class="row tips-box">
@@ -49,12 +49,12 @@
                                 </div>
                             </form>
                             <div class="col-xs-12">
-                                <p class="help-block"><strong>提示：</strong>搜索范围为 <strong>天猫</strong> 的商品</p>
+                                <p class="help-block"><strong>提示：</strong>搜索范围为 <strong>tm</strong> 的商品</p>
                             </div>
                         </div>
                         <div class="row tips-box">
                             <div class="col-xs-12">
-                                <h5>天猫搜索使用说明</h5>
+                                <h5>tm搜索使用说明</h5>
                                 <p>
                                     <ol>
                                         <li>多个关键词用空格隔开，例如：T恤 白色</li>
@@ -78,7 +78,7 @@
                                 </div>
                             </form>
                             <div class="col-xs-12">
-                                <p class="help-block"><strong>提示：</strong>搜索范围为 <strong>淘宝聚划算</strong> 的商品</p>
+                                <p class="help-block"><strong>提示：</strong>搜索范围为 <strong>tb聚划算</strong> 的商品</p>
                             </div>
                         </div>
                         <div class="row tips-box">
@@ -116,7 +116,7 @@
                                 <p>
                                     <ol>
                                         <li>粘贴含有优惠口令的文字可以搜索特定商品</li>
-                                        <li>淘口令案例：復·制这段描述，€z8rP0wuMBLc€ ，咑閞【手机淘宝】即可查看。"</li>
+                                        <li>淘口令案例：復·制这段描述，€z8rP0wuMBLc€ ，咑閞【手机tb】即可查看。"</li>
                                         <li>淘口令是领取优惠券的一种方式，例如："€z8rP0wuMBLc€"就是淘口令</li>
                                         <li>淘口令的有效期为30天，淘口令自生成30天后失效</li>
                                         <li>请使用在有效期内的淘口令进行商品查询</li>

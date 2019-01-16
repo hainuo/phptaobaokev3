@@ -1,5 +1,5 @@
 <nav class="mui-bar mui-bar-tab lbd-footer-tab lbd-goods-footer" id="lbd-footer-tab-item">
-    <a title="淘宝天猫优惠券" class="mui-tab-item lbd-1 " href="{{ route('wx.index') }}">
+    <a title="优惠券" class="mui-tab-item lbd-1 " href="{{ route('wx.index') }}">
         <span class="mui-icon mui-icon-home"></span>
         <span class="mui-tab-label">首页</span>
     </a>

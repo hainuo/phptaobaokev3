@@ -7,7 +7,7 @@ use Longbeidou\Taobaoke\Contracts\Contract;
 use App\Traits\CouponRelated;
 
 /**
- * 阿里妈妈淘宝客api实现
+ * 阿里妈妈tb客api实现
  */
 class AlimamaRepository implements AlimamaRepositoryInterface
 {
@@ -88,7 +88,7 @@ class AlimamaRepository implements AlimamaRepositoryInterface
     return $result->results->results;
   }
 
-  // 淘宝客商品详情（简版）
+  // tb客商品详情（简版）
   public function taobaoTbkItemInfoGet(Array $datas)
   {
     $result = $this->alimamaSdk->taobaoTbkItemInfoGet($datas);
@@ -121,7 +121,7 @@ class AlimamaRepository implements AlimamaRepositoryInterface
     return $tpwd;
   }
 
-  //淘宝客擎天柱通用物料API  淘宝客物料下行-导购
+  //tb客擎天柱通用物料API  tb客物料下行-导购
   public function taobaoTbkDgOptimusMaterial(Array $datas)
   {
     $result = $this->alimamaSdk->taobaoTbkDgOptimusMaterial($datas);

@@ -103,7 +103,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-3 control-label">是否只选天猫商品：</label>
+                            <label class="col-sm-3 control-label">是否只选tm商品：</label>
                             <div class="col-sm-9">
                               <p>{{ $couponRule->is_tmall }}</p>
                             </div>

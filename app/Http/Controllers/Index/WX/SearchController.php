@@ -29,7 +29,7 @@ class SearchController extends Controller
 
     public function index()
     {
-      $title = "淘宝天猫优惠券查询系统";
+      $title = "优惠券查询系统";
       $guessYouLikeCoupons = $this->repository->guessYouLike($this->guessYouLikeAdzoneId, '5');
 
       return view('wx.search.index', compact('title', 'guessYouLikeCoupons'));
@@ -47,13 +47,13 @@ class SearchController extends Controller
       $para['sort'] = $this->repository->getSortValue($request->sort);
       $para['q'] = $request->q;
       $para['adzone_id'] = $this->searchAllAdzonId;
-      $title = $request->q.'淘宝天猫优惠券';
+      $title = $request->q.'优惠券';
       $couponItems = $this->repository->all(['adzone_id' => $this->searchAllAdzonId, 'page_size' => self::PAGE_SIZE, 'q' => $request->q, 'sort' => $sort]);
 
       return view('wx.search.result_all', compact('title', 'couponItems', 'q', 'para', 'sort'));
     }
 
-    // 只搜索天猫
+    // 只搜索tm
     public function tmall(Request $request)
     {
       $this->validate($request, [
@@ -65,7 +65,7 @@ class SearchController extends Controller
       $para['sort'] = $this->repository->getSortValue($request->sort);
       $para['q'] = $request->q;
       $para['adzone_id'] = $this->searchTmallAdzoneId;
-      $title = $request->q.'天猫优惠券';
+      $title = $request->q.'tm优惠券';
       $couponItems = $this->repository->tmall(['adzone_id' => $this->searchTmallAdzoneId, 'page_size' => self::PAGE_SIZE, 'q' => $request->q, 'sort' => $sort]);
 
       return view('wx.search.result_tmall', compact('title', 'couponItems', 'q', 'para', 'sort'));

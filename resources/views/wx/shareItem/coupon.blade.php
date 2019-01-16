@@ -38,13 +38,13 @@
 								<li class="mui-table-view-cell">
 									<h5>淘口令使用说明：</h5>
 									<p>
-										1.如果手机有淘宝APP，则可以使用此方式<br />
+										1.如果手机有tbAPP，则可以使用此方式<br />
 										2.淘口令使用步骤：<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;a.点击【复制淘口令文案】按钮<br />
                     &nbsp;&nbsp;&nbsp;&nbsp;b.通过微信、QQ等软件发给好友<br />
 										&nbsp;&nbsp;&nbsp;&nbsp;c.好友复制发给的文案<br />
-										&nbsp;&nbsp;&nbsp;&nbsp;d.打开手机淘宝APP<br />
-										&nbsp;&nbsp;&nbsp;&nbsp;e.在淘宝APP内领券下单<br />
+										&nbsp;&nbsp;&nbsp;&nbsp;d.打开手机tbAPP<br />
+										&nbsp;&nbsp;&nbsp;&nbsp;e.在tbAPP内领券下单<br />
 										3.优惠券有使用期限，过期作废，请尽快下单。
 									</p>
 								</li>

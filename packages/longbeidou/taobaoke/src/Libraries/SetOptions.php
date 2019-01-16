@@ -16,8 +16,10 @@ class SetOptions
 	public function options($obj, Array $datas, Array $standard)
 	{
 		foreach ($datas as $key => $value) {
+//		    dump($key,$value);
 			if (in_array($key, $standard) && !empty($value) && $key !== 0) {
 				$setstr = $this->setKey($key);
+//				dump($setstr);
 				$obj->$setstr($value);
 			}
 		}
@@ -34,6 +36,7 @@ class SetOptions
 	public function toOptions ($obj, Array $datas, Array $standard)
 	{
 		foreach ($datas as $key => $value) {
+//		    dump($key,$value);
 			if (in_array($key, $standard) && !empty($value) && $key !== 0) {
 				$obj->$key = $value;
 			}

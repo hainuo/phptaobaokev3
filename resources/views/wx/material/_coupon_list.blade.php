@@ -20,9 +20,9 @@
                 <div class="mui-col-xs-8 lbd-content-more">
                   <div class="lbd-top">
                     @if($item->user_type == 1)
-                    <span class="lbd-from-tmall">天猫</span>
+                    <span class="lbd-from-tmall">tm</span>
                     @else
-                    <span class="lbd-from-taobao">淘宝</span>
+                    <span class="lbd-from-taobao">tb</span>
                     @endif
                     <span class="lbd-from-new">今日上新</span>
                     销量：{{ $item->volume }}

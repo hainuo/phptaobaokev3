@@ -12,7 +12,7 @@
         </div>
         <div class="mui-col-xs-8 lbd-content-more">
           <div class="lbd-top">
-            <!-- <span class="lbd-from-tmall">天猫</span> -->
+            <!-- <span class="lbd-from-tmall">tm</span> -->
             {!! $couponShow->showTmallOrTaobao($item->user_type) !!}
             <span class="lbd-from-new">今日上新</span>
             销量：{{ $item->volume }}

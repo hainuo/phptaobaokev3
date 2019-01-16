@@ -18,8 +18,8 @@ class ShareItemController extends Controller
     // 分享优惠券的页面
     public function coupon($id, Request $request)
     {
-      $title = '分享淘宝天猫优惠券';
-      $name = '分享淘宝优惠券';
+      $title = '分享优惠券';
+      $name = '分享tb优惠券';
       $couponLink = $this->repository->couponLink($request->all());
       $linkPara = $this->repository->linkPara($couponLink);
       // $shortCouponLink = $this->repository->shortCouponLink($couponLink);
