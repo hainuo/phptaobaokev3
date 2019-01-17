@@ -22,6 +22,8 @@ class CouponActionController extends Controller
     $title = '领优惠券';
     $name = '领tb优惠券';
     $couponLink = $this->repository->couponLink($request->all());
+//    dump($request->all());
+//    dump($couponLink);
     // $linkPara = $this->repository->linkPara($couponLink);
 
     if (
@@ -32,6 +34,8 @@ class CouponActionController extends Controller
     } else {
       $itemInfo = null;
     }
+
+
     $tpwd = $this->repository->makeTpwd($couponLink, $itemInfo);
 //    dump($tpwd);
     $showClient = $this->repository->showClient($showClient);

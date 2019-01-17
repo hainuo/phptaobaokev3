@@ -48,8 +48,9 @@ class CouponActionService
   // 通过传参的方式获取优惠券的链接
   public function linkFromPara($paraArr)
   {
+//      dump('传入参数',$paraArr);
     $result = $this->couponLinkPrar($paraArr);
-
+//    dump('处理后参数',$result);
     $paraArrNew = [];
     foreach ($result  as $para => $value) {
       $paraArrNew[] = $para.'='.$value;
@@ -74,13 +75,13 @@ class CouponActionService
       !empty($paraArr['e']) &&
       !empty($paraArr['app_pvid']) &&
       !empty($paraArr['ptl']) &&
-      !empty($paraArr['mt']) &&
+//      !empty($paraArr['mt']) &&
       !empty($paraArr['union_lens'])
     ) {
       $result['e'] = $paraArr['e'];
       $result['app_pvid'] = $paraArr['app_pvid'];
       $result['ptl'] = $paraArr['ptl'];
-      $result['mt'] = $paraArr['mt'];
+//      $result['mt'] = $paraArr['mt'];
       $result['union_lens'] = $paraArr['union_lens'];
     }
 
