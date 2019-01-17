@@ -42,8 +42,8 @@ class TpwdService
       'logo' => empty($tpwdConfig['logo']) ? $itemInfo->pict_url : $tpwdConfig['logo'],
       'text' => empty($tpwdConfig['text']) ? $itemInfo->title : $tpwdConfig['text'],
       'user_id' => $tpwdConfig['user_id'],
-        'ext'=>json_encode(['tkuser_id'=>"123424"])
     ];
+//    dump($link);
     $tpwdPara['url'] = "https:".$link;
 
     return $this->alimamaRepository->taobaoWirelessShareTpwdCreate($tpwdPara);
@@ -59,8 +59,6 @@ class TpwdService
       'text' => $tpwdConfig['text'],
       'user_id' => $tpwdConfig['user_id'],
       'url' => $link,
-        'ext'=>json_encode(['tkuser_id'=>"123424"])
-
     ]);
   }
 }

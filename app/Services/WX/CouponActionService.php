@@ -53,6 +53,9 @@ class CouponActionService
 //    dump('处理后参数',$result);
     $paraArrNew = [];
     foreach ($result  as $para => $value) {
+        if($para=='e'){
+            $value=urlencode($value);
+        }
       $paraArrNew[] = $para.'='.$value;
     }
 

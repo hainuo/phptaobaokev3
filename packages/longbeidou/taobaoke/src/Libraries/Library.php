@@ -316,7 +316,7 @@ class Library extends Base
 	public function taobaoWirelessShareTpwdCreate(Array $datas)
 	{
 //	    dump($datas);
-		$standard = ['user_id', 'text', 'url', 'logo', 'ext'];
+		$standard = ['user_id', 'text', 'url', 'logo'];
 		$req = new WirelessShareTpwdCreateRequest;
 		$req =new  TbkTpwdCreateRequest();
 //		$tpwd_param = new GenPwdIsvParamDto;

@@ -285,11 +285,15 @@ class TopClient
 			}else{
 				$resp = $this->curl($requestUrl, $apiParams);
 			}
-            Log::info($requestUrl);
+//            Log::info($requestUrl);
+//            dump($sysParams);
+//            dump($apiParams);
+//			dump($fileFields);
+//           dump(json_decode($resp));
+
 //            Log::info('apiparams  '.var_export($apiParams,true));
 //            Log::info('filefieldss '. var_export($fileFields,true));
 //           Log::info(var_export(json_decode($resp,true),true));
-//             dump(json_decode($resp));
 		}
 		catch (Exception $e)
 		{
